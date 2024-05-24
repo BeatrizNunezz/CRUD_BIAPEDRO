@@ -15,4 +15,21 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="text" name="category" class="form-control" placeholder="Catefory">
+                                <input type="text" name="category" class="form-control" placeholder="Catengory">
+                                </div>
+                             </div>
+                             <div class="row mb-3">
+                                <div class="col">
+                                    <input type="text" name="price" class="form-control" placeholder="price">
+                                </div>
+                                </div>
+
+                                <div class="row">
+                                 <div class=""d=grid>
+                                    <button class="btn btn-primary">Submit</button>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
