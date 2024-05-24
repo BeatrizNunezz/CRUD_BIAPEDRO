@@ -36,4 +36,11 @@ class ProductController extends Controller
             return redirect(route('admin.products/create'));
         }
     }
+
+    public function edit($id)
+    {
+        $products = Product::findOrFail($id);
+        return view('admin.product.update', compact('products'));
+    }
+ 
 }
