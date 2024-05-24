@@ -10,10 +10,18 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <div class="d-flex align-iten-center justify-content-between">
-                    <h1 class="mb-0">List Product<h1>
-                        <a href="{{ route('admin/products/creat') }}" class="btn btn-primary">Add Product</a>
+                        <h1 class="mb-0">List Product<h1>
+                        <a href="{{ route('admin/products/create') }}" class="btn btn-primary">Add Product</a>
                     </div>
+                    <hr />
+                    @if(Session::has('success'))
+                    <div class="alert alert-success" role="alert">
+                        {{ Session::get('success') }}
+                    </div>
+                    @endif
+
                     Table Content
+
                 </div>
             </div>
         </div>
